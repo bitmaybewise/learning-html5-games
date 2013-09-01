@@ -18,7 +18,7 @@ var KEY = {
   S: 83
 };
 
-function movePaddles() {
+function moveRackets() {
   if(pingpong.pressedKeys[KEY.UP]) {
     var top = parseInt($('#racketB').css('top'));
     $('#racketB').css('top', top-5);
@@ -101,7 +101,7 @@ function moveBall() {
 
 function gameloop() {
   moveBall();
-  movePaddles();
+  moveRackets();
 }
 
 
