@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ping Pong</title>
+
+    <style>
+      #playground {
+        background: #e0ffe0;
+        width: 400px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+      }
+      #ball {
+        background: #fbb;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 150px;
+        top: 100px;
+        border-radius: 10px;
+      }
+      .racket {
+        background: #bbf;
+        left: 50px;
+        top: 70px;
+        position: absolute;
+        width: 30px;
+        height: 70px;
+      }
+      #racketB {
+        left: 320px;
+      }
+    </style>
+      </head>
+  <body>
+    <header><h1>Ping Pong</h1></header>
+
+    <div class="scoreboard">
+      <div class="score">Player A: <span id="scoreA">0</span></div>
+      <div class="score">Player B: <span id="scoreB">0</span></div>
+    </div>
+    <div id="game">
+      <div id="playground">
+        <div id="racketA" class="racket"></div>
+        <div id="racketB" class="racket"></div>
+        <div id="ball"></div>
+      </div>
+    </div>
+
+    <footer>This is a multiplayer ping pong game</footer>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/pingpong.js"></script>
+  </body>
+</html>
