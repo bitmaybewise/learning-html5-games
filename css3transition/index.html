@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>css3 transition</title>
+    <link rel="stylesheet" href="css3transition.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS3 Transition</h1>
+    </header>
+
+    <section id="game">
+      <div id="cards">
+        <div id="card1" class="card cardAK"></div>
+        <div id="card2" class="card cardAQ"></div>
+      </div>
+    </section>
+
+    <script src="../lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#card1").addClass("moveAndScale");
+        $("#card2").addClass("rotateRight");
+      });
+    </script>
+  </body>
+</html>

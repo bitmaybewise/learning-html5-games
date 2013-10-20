@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>flipping a card</title>
+    <link rel="stylesheet" href="css3flip.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flipping a card</h1>
+    </header>
+
+    <section id="game">
+      <div id="cards">
+        
+        <div class="card">
+          <div class="face front"></div>
+          <div class="face back cardAK"></div>
+        </div>
+
+        <div class="card">
+          <div class="face front"></div>
+          <div class="face back cardAQ"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="../lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('#cards').children().each(function(index){
+          $(this).click(function(){
+            $(this).toggleClass('card-flipped');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
